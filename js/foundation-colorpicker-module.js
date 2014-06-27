@@ -275,7 +275,7 @@ angular.module('colorpicker.module', [])
                 '<colorpicker-hue><i></i></colorpicker-hue>' +
                 '<colorpicker-alpha><i></i></colorpicker-alpha>' +
                 '<colorpicker-preview></colorpicker-preview>' +
-                '<button class="tiny secondary button right">&times;</button>' +
+                '<i class="fa fa-times close"></i>' +
               '</div>',
           colorpickerTemplate = angular.element(template),
           pickerColor = Color,
@@ -433,7 +433,7 @@ angular.module('colorpicker.module', [])
           }
         };
 
-        colorpickerTemplate.find('button').on('click', function () {
+        colorpickerTemplate.find('.close').on('click', function () {
           hideColorpickerTemplate();
         });
 
